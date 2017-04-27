@@ -72,3 +72,33 @@ ul li{
 	display: inline;
 	margin-left: 12px;
 }
+.path11{
+	transform: rotate(0deg);
+}
+.path22{
+	transform: rotate(90deg);
+}
+.path34{
+	transform: rotate(0deg);
+}
+.path41{
+	transform: rotate(90deg);
+}
+.path12{
+	transform: rotate(180deg);
+}
+.path23{
+	transform: rotate(270deg);
+}
+.congratulation{
+	display: none;
+}
+.congratulation.success{
+	display: block;
+    position: absolute;
+    top: 80%;
+    left: calc( 50% - 60px );
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+}
