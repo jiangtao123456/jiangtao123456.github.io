@@ -101,6 +101,13 @@ $(document).ready(function(){
         	// $('#msg').val('通关失败');
         }
 	});
+	
+	function showSuccessResult()
+		{
+    		   var msg = "恭喜过关！";
+  		   alert(msg);
+   		   setTimeout("showSuccessResult()", 5000);
+		}
 
 	function nextImg(target, classname){
 		var num = Number(classname.replace(/[^0-9]/ig,"")),
