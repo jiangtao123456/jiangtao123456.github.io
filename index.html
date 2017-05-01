@@ -8,6 +8,22 @@
 	<link rel="stylesheet" type="text/css" href="css/game.css">
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/game.js"></script>
+	    
+	<script>
+	    function showSuccessResult()
+		{
+    		   var msg = "恭喜过关！";
+  		   alert(msg);
+   		   setTimeout("showSuccessResult()", 5000);
+		}
+		
+		function showfailedResult()
+		{
+    		   var msg = "时间到，很遗憾未能过关！";
+  		   alert(msg);
+   		   setTimeout("showfailedResult()", 5000);
+		}
+	</script>
 </head>
 <body>
 	<div id="home1">
