@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'block');
+		alert("欢迎进入游戏！");
 // 		showSuccessResult()；
 	});
 	$('#gotorule').click(function(){
