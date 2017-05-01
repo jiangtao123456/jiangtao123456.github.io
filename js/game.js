@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'block');
-		showSuccessResult()；
+// 		showSuccessResult()；
 	});
 	$('#gotorule').click(function(){
 		$('#home1').css('display', 'none');
@@ -104,9 +104,9 @@ $(document).ready(function(){
 	
 	function showSuccessResult()
 		{
-    		   var msg = "恭喜过关！";
-  		   alert(msg);
-   		   setTimeout("showSuccessResult()", 5000);
+		   var msg = "恭喜过关！";
+		   alert(msg);
+		   setTimeout("showSuccessResult()", 5000);
 		}
 
 	function nextImg(target, classname){
