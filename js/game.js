@@ -20,7 +20,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
-		setTimeout("showFailedResult()", 5000);
+		window.setTimeout("showFailedResult()", 3000);
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
