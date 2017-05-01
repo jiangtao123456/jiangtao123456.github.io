@@ -3,6 +3,7 @@ $(document).ready(function(){
 	$('#gamepre').css('display', 'none');
 	$('#rule').css('display', 'none');
 	$('#game1').css('display', 'none');
+	$('#fail').css('display','none');
 
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
@@ -19,7 +20,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
-		showSuccessResult();
+		setTimeout("showSuccessResult()", 5000);
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
@@ -104,11 +105,11 @@ $(document).ready(function(){
         }
 	});
 	
-	function showSuccessResult()
+	//失败调用的方法
+	function showFailedResult()
 		{
-		   var msg = "恭喜过关！";
-		   alert(msg);
-		   setTimeout("showSuccessResult()", 5000);
+		   $('#game1').css('display', 'none');
+		   $('#fail').css('display', 'block');
 		}
 	
 	
