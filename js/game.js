@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'block');
+		setTime("showSuccessResult()",5000)；
 	});
 	$('#gotorule').click(function(){
 		$('#home1').css('display', 'none');
@@ -90,6 +91,7 @@ $(document).ready(function(){
         }
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
         	$('#msg').addClass('success');
+		$('body').stopTime ('showSuccessResult');
         }
         else{
         	// $('#msg').addClass('success');
