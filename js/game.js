@@ -98,6 +98,7 @@ $(document).ready(function(){
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
         	$('#msg').addClass('success');
 // 		$('body').stopTime ();
+		window.setTimeout("showFailedResult()", 3000);
         }
         else{
         	// $('#msg').addClass('success');
