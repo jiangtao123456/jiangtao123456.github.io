@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'block');
-		alert("欢迎进入游戏！");
+		
 // 		showSuccessResult()；
 	});
 	$('#gotorule').click(function(){
@@ -19,6 +19,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
+		showSuccessResult();
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
@@ -109,6 +110,8 @@ $(document).ready(function(){
 		   alert(msg);
 		   setTimeout("showSuccessResult()", 5000);
 		}
+	
+	
 
 	function nextImg(target, classname){
 		var num = Number(classname.replace(/[^0-9]/ig,"")),
