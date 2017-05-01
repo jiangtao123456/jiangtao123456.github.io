@@ -7,7 +7,7 @@ $(document).ready(function(){
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'block');
-		setTime("showSuccessResult()",5000)；
+		showSuccessResult()；
 	});
 	$('#gotorule').click(function(){
 		$('#home1').css('display', 'none');
@@ -82,16 +82,19 @@ $(document).ready(function(){
         // console.log(pathArr)
         if(ids.length === 4 && pathArr.sort().toString() == arr4.sort().toString()){
         	$('#msg').addClass('success');
+		$('body').stopTime ();
         }
         else if(ids.length === 6 && pathArr.sort().toString() == arr6.sort().toString()){
         	$('#msg').addClass('success');
+		$('body').stopTime ();
         }
         else if(ids.length === 8 && pathArr.sort().toString() == arr8.sort().toString()){
         	$('#msg').addClass('success');
+		$('body').stopTime ();
         }
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
         	$('#msg').addClass('success');
-		$('body').stopTime ('showSuccessResult');
+		$('body').stopTime ();
         }
         else{
         	// $('#msg').addClass('success');
