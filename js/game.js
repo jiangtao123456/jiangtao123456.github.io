@@ -20,7 +20,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
-		alert("游戏开始");
+		//alert("游戏开始");
 		window.setTimeout(showFailedResult(), 3000);
 	});
 	$('#goback').click(function(){
@@ -99,7 +99,7 @@ $(document).ready(function(){
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
         	$('#msg').addClass('success');
 // 		$('body').stopTime ();
-		window.setTimeout("showFailedResult()", 3000);
+		//window.setTimeout(showFailedResult()", 3000);
         }
         else{
         	// $('#msg').addClass('success');
