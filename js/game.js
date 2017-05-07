@@ -21,7 +21,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
-		alert("游戏开始663");
+		alert("游戏开始，请在30秒内通关！");
 		time1 = window.setTimeout(showFailedResult, 20000);
 	});
 	$('#goback').click(function(){
