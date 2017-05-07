@@ -21,7 +21,7 @@ $(document).ready(function(){
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
 		//alert("游戏开始2");
-		window.setTimeout(showFailedResult, 30000);
+		window.setTimeout(showFailedResult, 10000);
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
