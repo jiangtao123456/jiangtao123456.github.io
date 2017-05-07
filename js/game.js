@@ -20,7 +20,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
-		window.setTimeout("showFailedResult()", 3000);
+		window.setTimeout('showFailedResult()', 3000);
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
@@ -109,8 +109,9 @@ $(document).ready(function(){
 	//失败调用的方法
 	function showFailedResult()
 		{
-		   $('#game1').css('display', 'none');
-		   $('#fail').css('display', 'block');
+		   alert("通关失败");
+		  // $('#game1').css('display', 'none');
+		 //  $('#fail').css('display', 'block');
 		}
 	
 	
