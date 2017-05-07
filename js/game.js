@@ -39,6 +39,7 @@ $(document).ready(function(){
 	$('#play-again').click(function(){
 		$('#game1').css('display', 'block');
 		$('#failure').css('display', 'none');
+		time1 = window.setTimeout(showFailedResult, 20000);
 	});
 
 	var arr4 = [11,11,11,11],
