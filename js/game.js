@@ -86,19 +86,19 @@ $(document).ready(function(){
         // console.log(pathArr)
         if(ids.length === 4 && pathArr.sort().toString() == arr4.sort().toString()){
         	$('#msg').addClass('success');
-// 		$('body').stopTime ();
+		$('body').stopTime ();
         }
         else if(ids.length === 6 && pathArr.sort().toString() == arr6.sort().toString()){
         	$('#msg').addClass('success');
-// 		$('body').stopTime ();
+		$('body').stopTime ();
         }
         else if(ids.length === 8 && pathArr.sort().toString() == arr8.sort().toString()){
         	$('#msg').addClass('success');
-// 		$('body').stopTime ();
+		$('body').stopTime ();
         }
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
         	$('#msg').addClass('success');
-// 		$('body').stopTime ();
+		$('body').stopTime ();
 		//window.setTimeout(showFailedResult()", 3000);
         }
         else{
