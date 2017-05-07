@@ -112,7 +112,7 @@ $(document).ready(function(){
 		{
 		   //lert("通关失败");
 		   $('#game1').css('display', 'none');
-		   $('#fail').css('display', 'block');
+		   $('#home1').css('display', 'block');
 		}
 	
 	
