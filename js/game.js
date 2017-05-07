@@ -110,7 +110,7 @@ $(document).ready(function(){
         else{
         	// $('#msg').addClass('success');
         	// $('#msg').val('通关失败');
-		alert("33");
+		//alert("33");
         }
 	});
 	
