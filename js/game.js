@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('#gamepre').css('display', 'none');
 	$('#rule').css('display', 'none');
 	$('#game1').css('display', 'none');
-	$('#fail').css('display','none');
+	$('#failure').css('display','none');
 
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
@@ -21,7 +21,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
-		alert("游戏开始2");
+		alert("游戏开始663");
 		time1 = window.setTimeout(showFailedResult, 20000);
 	});
 	$('#goback').click(function(){
@@ -119,7 +119,7 @@ $(document).ready(function(){
 		{
 		   //lert("通关失败");
 		   $('#game1').css('display', 'none');
-		   $('#fail').css('display', 'block');
+		   $('#failure').css('display', 'block');
 		}
 	
 	
