@@ -1,3 +1,4 @@
+var time1;
 $(document).ready(function(){ 
 	$('#home1').css('display', 'block');
 	$('#gamepre').css('display', 'none');
@@ -21,7 +22,7 @@ $(document).ready(function(){
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
 		//alert("游戏开始2");
-		var i = window.setTimeout(showFailedResult, 20000);
+		time1 = window.setTimeout(showFailedResult, 20000);
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
@@ -86,19 +87,19 @@ $(document).ready(function(){
         // console.log(pathArr)
         if(ids.length === 4 && pathArr.sort().toString() == arr4.sort().toString()){
         	$('#msg').addClass('success');
-		 clearTimeout(i);
+		 clearTimeout(time1);
         }
         else if(ids.length === 6 && pathArr.sort().toString() == arr6.sort().toString()){
         	$('#msg').addClass('success');
-		 clearTimeout(i);
+		 clearTimeout(time1);
         }
         else if(ids.length === 8 && pathArr.sort().toString() == arr8.sort().toString()){
         	$('#msg').addClass('success');
-		 clearTimeout(i);
+		 clearTimeout(time1);
         }
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
         	$('#msg').addClass('success');
-		 clearTimeout(i);
+		 clearTimeout(time1);
 		//window.setTimeout(showFailedResult()", 3000);
         }
         else{
