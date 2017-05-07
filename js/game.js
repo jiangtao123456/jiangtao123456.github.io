@@ -35,6 +35,11 @@ $(document).ready(function(){
 		$('#rule').css('display', 'none');
 		$('#game1').css('display', 'none');
 	});
+	
+	$('#play-again').click(function(){
+		$('#game1').css('display', 'block');
+		$('#failure').css('display', 'none');
+	});
 
 	var arr4 = [11,11,11,11],
 		arr6 = [12,34,41,23,11,11],
