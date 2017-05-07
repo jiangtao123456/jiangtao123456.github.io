@@ -20,6 +20,7 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
+		alert("游戏开始");
 		window.setTimeout('showFailedResult()', 3000);
 	});
 	$('#goback').click(function(){
