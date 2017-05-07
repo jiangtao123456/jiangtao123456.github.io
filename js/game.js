@@ -110,9 +110,9 @@ $(document).ready(function(){
 	//失败调用的方法
 	function showFailedResult()
 		{
-		   alert("通关失败");
-		  // $('#game1').css('display', 'none');
-		 //  $('#fail').css('display', 'block');
+		   //lert("通关失败");
+		   $('#game1').css('display', 'none');
+		   $('#fail').css('display', 'block');
 		}
 	
 	
