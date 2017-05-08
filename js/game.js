@@ -1,17 +1,24 @@
-var time1;
 $(document).ready(function(){ 
-	$('#home1').css('display', 'block');
+	var time1;
+	$('#home').css('display', 'block');
+	$('#home1').css('display', 'none');
 	$('#gamepre').css('display', 'none');
 	$('#rule').css('display', 'none');
 	$('#game1').css('display', 'none');
 	$('#failure').css('display','none');
 	$('#congratulation').css('display','none');
 
+	setTimeout(function(){
+		$('#home').css('display', 'none');
+		$('#home1').css('display', 'block');
+	}, 3000);
+	$('#home1').click(function(){
+		$('#home1').css('display', 'none');
+		$('#gamepre').css('display', 'block');
+	});
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'block');
-		
-// 		showSuccessResult()；
 	});
 	$('#gotorule').click(function(){
 		$('#home1').css('display', 'none');
@@ -23,7 +30,8 @@ $(document).ready(function(){
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
 		alert("游戏开始，请在30秒内通关！");
-		time1 = window.setTimeout(showFailedResult, 2000);
+
+		timeoutFn();
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
@@ -40,11 +48,13 @@ $(document).ready(function(){
 	$('#failure').click(function(){
 		$('#game1').css('display', 'block');
 		$('#failure').css('display', 'none');
-		time1 = window.setTimeout(showFailedResult, 2000);
+
+		timeoutFn();
 	});
 
 	$('#congratulation').click(function(){
 		// TODO sb啥惊喜
+		alert('找姜涛发红包');
 	});
 
 	var arr4 = [11,11,11,11],
@@ -105,7 +115,7 @@ $(document).ready(function(){
 			$('#failure').css('display','none');
 
         	$('#congratulation').css('display', 'block');
-		 clearTimeout(time1);
+			 clearTimeout(time1);
         }
         else if(ids.length === 6 && pathArr.sort().toString() == arr6.sort().toString()){
         	// $('#msg').addClass('success');
@@ -116,7 +126,7 @@ $(document).ready(function(){
 			$('#failure').css('display','none');
 
         	$('#congratulation').css('display', 'block');
-		 clearTimeout(time1);
+			 clearTimeout(time1);
         }
         else if(ids.length === 8 && pathArr.sort().toString() == arr8.sort().toString()){
         	// $('#msg').addClass('success');
@@ -127,7 +137,7 @@ $(document).ready(function(){
 			$('#failure').css('display','none');
 
         	$('#congratulation').css('display', 'block');
-		 clearTimeout(time1);
+			 clearTimeout(time1);
         }
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
         	// $('#msg').addClass('success');
@@ -138,23 +148,30 @@ $(document).ready(function(){
 			$('#failure').css('display','none');
 
         	$('#congratulation').css('display', 'block');
-		 clearTimeout(time1);
+			 clearTimeout(time1);
         }
         else{
         	// $('#msg').addClass('success');
         	// $('#msg').val('通关失败');
-		//alert("33");
+			//alert("33");
         }
 	});
-	
-	//失败调用的方法
-	function showFailedResult()
-		{
-		   $('#game1').css('display', 'none');
-		   $('#failure').css('display', 'block');
-		}
-	
-	
+
+	function timeoutFn(){
+		var time = 5;
+		$('#timeout').html(time + ' s');
+		time1 = setTimeout(function(){
+			if(time > 0){
+				clearTimeout(a);
+				time--;
+				$('#timeout').html(time + ' s');
+				time1 = setTimeout(arguments.callee, 1000);
+			}else{
+				$('#game1').css('display', 'none');
+				$('#failure').css('display','block');
+			}
+		},1000);
+	}
 
 	function nextImg(target, classname){
 		var num = Number(classname.replace(/[^0-9]/ig,"")),
@@ -174,5 +191,3 @@ $(document).ready(function(){
 		return numAfter;
 	}
 });
-
-
