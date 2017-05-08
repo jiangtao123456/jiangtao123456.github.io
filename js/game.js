@@ -1,5 +1,6 @@
 $(document).ready(function(){ 
-	var time1;
+	var time1, 
+		time = 30; //设置倒计时时间
 	$('#home').css('display', 'block');
 	$('#home1').css('display', 'none');
 	$('#gamepre').css('display', 'none');
@@ -107,7 +108,6 @@ $(document).ready(function(){
         }
         // console.log(pathArr)
         if(ids.length === 4 && pathArr.sort().toString() == arr4.sort().toString()){
-        	// $('#msg').addClass('success');
         	$('#home1').css('display', 'none');
 			$('#gamepre').css('display', 'none');
 			$('#rule').css('display', 'none');
@@ -118,7 +118,6 @@ $(document).ready(function(){
 			 clearTimeout(time1);
         }
         else if(ids.length === 6 && pathArr.sort().toString() == arr6.sort().toString()){
-        	// $('#msg').addClass('success');
         	$('#home1').css('display', 'none');
 			$('#gamepre').css('display', 'none');
 			$('#rule').css('display', 'none');
@@ -129,7 +128,6 @@ $(document).ready(function(){
 			 clearTimeout(time1);
         }
         else if(ids.length === 8 && pathArr.sort().toString() == arr8.sort().toString()){
-        	// $('#msg').addClass('success');
         	$('#home1').css('display', 'none');
 			$('#gamepre').css('display', 'none');
 			$('#rule').css('display', 'none');
@@ -140,7 +138,6 @@ $(document).ready(function(){
 			 clearTimeout(time1);
         }
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
-        	// $('#msg').addClass('success');
         	$('#home1').css('display', 'none');
 			$('#gamepre').css('display', 'none');
 			$('#rule').css('display', 'none');
@@ -158,7 +155,6 @@ $(document).ready(function(){
 	});
 
 	function timeoutFn(){
-		var time = 5;
 		$('#timeout').html(time + ' s');
 		time1 = setTimeout(function(){
 			if(time > 0){

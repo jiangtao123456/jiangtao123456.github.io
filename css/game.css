@@ -5,10 +5,6 @@
 body{
 	height: 100%;
 	height: 100%;
-	/*position: relative;*/
-	/*background:transparent url(../images/home1.jpg) no-repeat;
-	background-size: cover;
-	background-origin: border-box;*/
 }
 .home-btn{
 	position: absolute;
@@ -31,16 +27,6 @@ body{
 .home-btn.text2{
 	top: 85%;
 }
-/*.home1{
-	background:transparent url(../images/home1.jpg) no-repeat;
-	background-size: cover;
-	background-origin: border-box;
-}
-.home2{
-	background:white url(../images/person2.png) no-repeat;
-	background-size: cover;
-	background-origin: border-box;
-}*/
 .fl{
 	float: left;
 }
@@ -67,13 +53,11 @@ body{
 
 .gamebody img{
 	width: 20%;
-	/*margin-bottom: 10px;*/
 }
 ul{
 	width: 100%;
     position: absolute;
     top: 20%;
-    /*left: 8%;*/
 }
 ul li{
 	display: inline;
