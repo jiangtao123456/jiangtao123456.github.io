@@ -41,6 +41,17 @@ body{
 	color: #6dffe2;
 	border: 1px solid #f3f3f3;
 	background-color: darkgray;
+
+
+    width: 90px;
+    text-align: center;
+    line-height: 2;
+	    text-decoration: none;
+    padding: 7px;
+    color: black;
+    border: 1px solid #f3f3f3;
+    background-color: #ff9849;
+    font-weight: bolder;
 }
 #goback{
 	bottom: 10%;

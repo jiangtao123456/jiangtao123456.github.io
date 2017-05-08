@@ -21,8 +21,10 @@ $(document).ready(function(){
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'block');
 	});
-	$('#gotorule').click(function(){
+	$('#gotorule').click(function(e){
+		e.stopProgagation();
 		$('#home1').css('display', 'none');
+		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'block');
 	});
 	$('#next').click(function(){
