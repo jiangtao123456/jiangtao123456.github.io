@@ -8,10 +8,10 @@ body{
 }
 .home-btn{
 	position: absolute;
-    height: 50px;
+    height: 35px;
     width: 100px;
-    top: 50%;
-    left: 38%;
+    top: 75%;
+    left: 35%;
 }
 .plan-agian-btn{
    position: absolute;
