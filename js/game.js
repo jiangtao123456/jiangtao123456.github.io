@@ -5,6 +5,7 @@ $(document).ready(function(){
 	$('#rule').css('display', 'none');
 	$('#game1').css('display', 'none');
 	$('#failure').css('display','none');
+	$('#congratulation').css('display','none');
 
 	$('#gotogame').click(function(){
 		$('#home1').css('display', 'none');
@@ -22,7 +23,7 @@ $(document).ready(function(){
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'none');
 		alert("游戏开始，请在30秒内通关！");
-		time1 = window.setTimeout(showFailedResult, 20000);
+		time1 = window.setTimeout(showFailedResult, 2000);
 	});
 	$('#goback').click(function(){
 		$('#home1').css('display', 'block');
@@ -36,10 +37,14 @@ $(document).ready(function(){
 		$('#game1').css('display', 'none');
 	});
 	
-	$('#play-again').click(function(){
+	$('#failure').click(function(){
 		$('#game1').css('display', 'block');
 		$('#failure').css('display', 'none');
-		time1 = window.setTimeout(showFailedResult, 20000);
+		time1 = window.setTimeout(showFailedResult, 2000);
+	});
+
+	$('#congratulation').click(function(){
+		// TODO sb啥惊喜
 	});
 
 	var arr4 = [11,11,11,11],
@@ -92,19 +97,47 @@ $(document).ready(function(){
         }
         // console.log(pathArr)
         if(ids.length === 4 && pathArr.sort().toString() == arr4.sort().toString()){
-        	$('#msg').addClass('success');
+        	// $('#msg').addClass('success');
+        	$('#home1').css('display', 'none');
+			$('#gamepre').css('display', 'none');
+			$('#rule').css('display', 'none');
+			$('#game1').css('display', 'none');
+			$('#failure').css('display','none');
+
+        	$('#congratulation').css('display', 'block');
 		 clearTimeout(time1);
         }
         else if(ids.length === 6 && pathArr.sort().toString() == arr6.sort().toString()){
-        	$('#msg').addClass('success');
+        	// $('#msg').addClass('success');
+        	$('#home1').css('display', 'none');
+			$('#gamepre').css('display', 'none');
+			$('#rule').css('display', 'none');
+			$('#game1').css('display', 'none');
+			$('#failure').css('display','none');
+
+        	$('#congratulation').css('display', 'block');
 		 clearTimeout(time1);
         }
         else if(ids.length === 8 && pathArr.sort().toString() == arr8.sort().toString()){
-        	$('#msg').addClass('success');
+        	// $('#msg').addClass('success');
+        	$('#home1').css('display', 'none');
+			$('#gamepre').css('display', 'none');
+			$('#rule').css('display', 'none');
+			$('#game1').css('display', 'none');
+			$('#failure').css('display','none');
+
+        	$('#congratulation').css('display', 'block');
 		 clearTimeout(time1);
         }
         else if(ids.length === 10 && pathArr.sort().toString() == arr10.sort().toString()){
-        	$('#msg').addClass('success');
+        	// $('#msg').addClass('success');
+        	$('#home1').css('display', 'none');
+			$('#gamepre').css('display', 'none');
+			$('#rule').css('display', 'none');
+			$('#game1').css('display', 'none');
+			$('#failure').css('display','none');
+
+        	$('#congratulation').css('display', 'block');
 		 clearTimeout(time1);
         }
         else{
