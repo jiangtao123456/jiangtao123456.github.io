@@ -22,7 +22,7 @@ $(document).ready(function(){
 		$('#gamepre').css('display', 'block');
 	});
 	$('#gotorule').click(function(e){
-		e.stopProgagation();
+		e.stopPropagation();
 		$('#home1').css('display', 'none');
 		$('#gamepre').css('display', 'none');
 		$('#rule').css('display', 'block');
