@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
-	var time1, 
-		time = 30; //设置倒计时时间
+	var time1,
+	 time = 30; //设置倒计时时间；
 	$('#home').css('display', 'block');
 	$('#home1').css('display', 'none');
 	$('#gamepre').css('display', 'none');
@@ -49,13 +49,13 @@ $(document).ready(function(){
 	$('#failure').click(function(){
 		$('#game1').css('display', 'block');
 		$('#failure').css('display', 'none');
-
+		time = 30;
 		timeoutFn();
 	});
 
 	$('#congratulation').click(function(){
 		// TODO sb啥惊喜
-		alert('找姜涛发红包');
+		alert('找设计人员发红包');
 	});
 
 	var arr4 = [11,11,11,11],
@@ -155,6 +155,7 @@ $(document).ready(function(){
 	});
 
 	function timeoutFn(){
+		
 		$('#timeout').html(time + ' s');
 		time1 = setTimeout(function(){
 			if(time > 0){
