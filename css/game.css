@@ -10,7 +10,7 @@ body{
 	position: absolute;
     height: 35px;
     width: 100px;
-    top: 75%;
+    top: 50%;
     left: 35%;
 }
 .plan-agian-btn{
@@ -26,6 +26,11 @@ body{
 }
 .home-btn.text2{
 	top: 85%;
+}
+
+.home-btn.text3{
+	top: 75%;
+	 left: 45%;
 }
 .fl{
 	float: left;
