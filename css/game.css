@@ -50,10 +50,10 @@ body{
 	background-color: darkgray;*/
 
 
-    width: 90px;
+    width: 80px;
     text-align: center;
     line-height: 2;
-	    text-decoration: none;
+    text-decoration: none;
     padding: 7px;
     color: black;
     border: 1px solid #f3f3f3;
@@ -64,12 +64,12 @@ body{
 	bottom: 10%;
 }
 .gameperson{
-	position: absolute;
+   position: absolute;
     top: 10%;
     left: 10%;
 }
 .gameship{
-	position: absolute;
+    position: absolute;
     bottom: 15%;
     left: 5%;
 }
