@@ -29,11 +29,18 @@ body{
 }
 
 .home-btn.text3{
-	top: 75%;
-	 left: 45%;
+	top: 62%;
+	 left: 35%;
 }
 .fl{
 	float: left;
+}
+
+.f2{
+	display:block;
+	float: left;
+	width:100px;
+	height:30px;
 }
 .home-btn a{
 	text-decoration: none;
