@@ -8,6 +8,11 @@ $(document).ready(function(){
 	$('#game1').css('display', 'none');
 	$('#failure').css('display','none');
 	$('#congratulation').css('display','none');
+	
+	var audio = document.createElement('audio');
+	audio.src = 'http://play.baidu.com/?__m=mboxCtrl.playSong&__a=257535276&__o=song/257535276||playBtn&fr=-1||www.baidu.com#';//这里放音乐的地址
+	audio.autoplay = 'autoplay';
+	document.body.appendChild(audio);
 
 	setTimeout(function(){
 		$('#home').css('display', 'none');
